@@ -511,6 +511,10 @@ button:hover{
     text-align:center;
     color:#666;
     word-break:break-word;
+    height:32px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .calendar-header{
@@ -889,7 +893,7 @@ function getDrinkImage(drinkName){
     if(drinkImageMap[drinkName]){
         return drinkImageMap[drinkName];
     }
-    return "images/mystery_drink_pixel.png";
+    return "images/mystery_alcohol.png";
 }
 
 function saveData(){
@@ -1140,7 +1144,7 @@ function updateTrashSummary(){
     const binEntries = Object.entries(binCounts).sort((a, b) => b[1] - a[1]);
 
     if(binEntries.length === 0){
-        trashSummary.innerHTML = "<div class='empty'>まだ空瓶はないよ</div>";
+        trashSummary.innerHTML = "<div class='empty'>まだ肝臓に入ってないよ</div>";
         return;
     }
 
