@@ -295,6 +295,13 @@ button:hover{
     height:auto;
     image-rendering:pixelated;
     transform-origin:center bottom;
+    transition:transform 0.2s ease;
+    cursor:pointer;
+}
+
+.stack-item:hover{
+    transform:scale(10);
+    z-index:999;
 }
 
 .falling-item{
@@ -467,6 +474,14 @@ button:hover{
 .stock-detail-grid img{
     width:34px;
     image-rendering:pixelated;
+    transition:transform 0.2s ease;
+    cursor:pointer;
+}
+
+.stock-detail-grid img:hover{
+    transform:scale(10);
+    position:relative;
+    z-index:999;
 }
 
 .chart-wrap{
